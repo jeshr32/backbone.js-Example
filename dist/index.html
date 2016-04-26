@@ -1,0 +1,66 @@
+<!doctype html>
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="styles/1d7914e5.vendor.css" media="screen">
+    
+    <script src="scripts/9d44149a.vendor.js"></script>
+
+
+    <script type="text/template" id="boton_template">
+
+      <tr data-id=<%=_id%>>
+          <td data-id=<%=_id%>><%=_id%></td>
+          <td ><%=nombre%></td>
+          <td ><%=apellido%></td>
+          <td ><%=usuario%></td>
+          <td ><%=password%></td>
+      </tr>
+
+    </script>
+    <script type="text/template" id="formulario_template">
+
+          Nombre   <input type="text" id="nombre_set" value=<%=nombre%>><br>
+          Apellido <input type="text" id="apellido_set" value=<%=apellido%>><br>
+          Usuario  <input type="text" id="usuario_set" value=<%=usuario%>><br>
+          Password <input type="password" id="password_set" value=<%=password%>><br><br>
+          <button id="add_button">Añadir usuario</button>
+          <button id="close_form_btn">cerrar formulario</button>
+
+          <br><br>
+
+
+    </script>
+
+    <script type="text/template" id="buttons_template">
+
+      <button id="sForm">Nuevo Usuario</button>
+      <button id="del_button"> Eliminar seleccionado</button>
+      <button id="set_button">Aplicar valor</button>
+
+    </script>
+
+</head>
+<body>
+
+
+
+<div id="dos_cols">
+    <div id="mini_form">
+
+    </div>
+    <div id="listado">
+    </div>
+  
+    <div id="contenedor">
+    </div>
+</div>
+    <script src="scripts/a79dba46.main.js"></script>
+
+
+</body>
+</html>
